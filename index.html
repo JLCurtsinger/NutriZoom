@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Justin Curtsinger">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
+        <title>NutriZoom</title>
+    </head>
+    <body>
+        <!-- dark mode toggle switch -->
+        <button id="darkModeSwitchButton">
+            <img src="images/SunAndMoon.png" alt="dark mode icon" id="darkModeSwitch">
+        </button>
+
+        <!-- navigation -->
+        <div class="nav-container">
+            <nav>
+                <h1>NutriZoom</h1>
+                <img src="images/NutriZoomLogo.png" alt="NutriZoom logo" id="logo">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#game">PLAY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- main home section with hero image -->
+        <section id="home">
+            <div class="hero-image">
+                <img src="images/heroImage.png" alt="An overhead drone view image of the first NutriZoom location in Arizona, USA">
+                <h2>Eat Healthy, Go Further!</h2>
+            </div>
+        </section>
+
+        <!-- menu section with item changer -->
+        <section id="menu">
+            <h2>MENU</h2>
+            <div class="select-container">
+                <div id="select" class="select">
+                    <div class="select-item active">
+                        <img src="images/food/quinoaPowerBowl.webp" alt="Quinoa Power Bowl">
+                    </div>
+                    <div class="select-item">
+                        <img src="images/food/southwestQuinoaSalad.webp" alt="Southwest Quinoa Salad">
+                    </div>
+                    <div class="select-item">
+                        <img src="images/food/roastedVegetableHummusWrap.webp" alt="Roasted Vegetable Hummus Wrap">
+                    </div>
+                    <div class="select-item">
+                        <img src="images/food/AsianFusionBowl.webp" alt="Asian Fusion Bowl">
+                    </div>
+                    <div class="select-item">
+                        <img src="images/food/moroccanChickpeaBowl.webp" alt="Moroccan Chickpea Bowl">
+                    </div>
+                    <div class="select-item">
+                        <img src="images/food/mangoBlackBeanBowl.webp" alt="Mango Black Bean Bowl">
+                    </div>
+                    <div class="select-item">
+                        <img src="images/food/BBQchickenAndCornBowl.webp" alt="BBQ Chicken & Sweet Corn Bowl">
+                    </div>
+                </div>
+
+                <div class="menu-selector">
+                    <button>Quinoa Power Bowl</button>
+                    <button>Southwest Quinoa Salad</button>
+                    <button>Roasted Vegetable Hummus Wrap</button>
+                    <button>Asian Fusion Bowl</button>
+                    <button>Moroccan Chickpea Bowl</button>
+                    <button>Mango Black Bean Bowl</button>
+                    <button>BBQ Chicken & Sweet Corn Bowl</button>
+                </div>
+                <div class="select-details">
+                    <div class="item-detail active">
+                        <h3>Quinoa Power Bowl</h3>
+                        <ul id="item1-ingredients">
+                            <li>Optional: Grilled BBQ chicken breast, chopped</li>
+                            <li>Cooked quinoa</li>
+                            <li>Sliced cherry tomatoes</li>
+                            <li>Sliced cucumber</li>
+                            <li>Cooked edamame beans</li>
+                            <li>Diced bell peppers</li>
+                            <li>Avocado slices</li>
+                            <li>A sprinkle of feta cheese</li>
+                            <li>Lemon-tahini dressing (tahini, lemon juice, garlic, water to thin)</li>
+                            <li>Optional: add grilled chicken or tofu for extra protein</li>
+                        </ul>
+                    </div>
+                    <div class="item-detail">
+                        <h3>Southwest Quinoa Salad</h3>
+                        <ul id="item2-ingredients">
+                            <li>Optional: Grilled BBQ chicken breast, chopped</li>
+                            <li>Cooked quinoa</li>
+                            <li>Black beans</li>
+                            <li>Corn kernels</li>
+                            <li>Diced tomatoes</li>
+                            <li>Diced red onions</li>
+                            <li>Sliced avocado</li>
+                            <li>Chopped cilantro</li>
+                            <li>Lime vinaigrette dressing (lime juice, olive oil, salt, pepper)</li>
+                            <li>Optional: jalapeño slices for extra heat</li>
+                        </ul>
+                    </div>
+                    <div class="item-detail">
+                        <h3>Roasted Vegetable Hummus Wrap</h3>
+                        <ul id="item3-ingredients">
+                            <li>Whole wheat or spinach tortilla wrap</li>
+                            <li>Hummus spread</li>
+                            <li>Roasted vegetables (zucchini, bell peppers, eggplant, onions)</li>
+                            <li>Spinach or mixed greens</li>
+                            <li>Sliced avocado</li>
+                            <li>Sprinkle of feta cheese or vegan alternative</li>
+                            <li>A dash of lemon juice or balsamic glaze</li>
+                        </ul>
+                    </div>
+                    <div class="item-detail">
+                        <h3>Asian Fusion Bowl</h3>
+                        <ul id="item4-ingredients">
+                            <li>Cooked brown rice or noodles</li>
+                            <li>Grilled chicken or tofu, seasoned with soy sauce and ginger</li>
+                            <li>Steamed broccoli florets</li>
+                            <li>Sliced bell peppers</li>
+                            <li>Shredded carrots</li>
+                            <li>Edamame beans</li>
+                            <li>Sesame seeds</li>
+                            <li>Drizzle of teriyaki sauce or a mix of soy sauce and honey</li>
+                        </ul>
+                    </div>
+                    <div class="item-detail">
+                        <h3>Moroccan Chickpea Bowl</h3>
+                        <ul id="item5-ingredients">
+                            <li>Cooked chickpeas</li>
+                            <li>Cooked couscous or quinoa</li>
+                            <li>Roasted sweet potatoes, cubed</li>
+                            <li>Spinach leaves</li>
+                            <li>Diced cucumber</li>
+                            <li>Cherry tomatoes, halved</li>
+                            <li>A dollop of Greek yogurt</li>
+                            <li>Sprinkle of crushed almonds</li>
+                            <li>Moroccan spice blend (cumin, cinnamon, coriander, ginger)</li>
+                        </ul>
+                    </div>
+                    <div class="item-detail">
+                        <h3>Mango Black Bean Bowl</h3>
+                        <ul id="item6-ingredients">
+                            <li>Diced ripe mango</li>
+                            <li>Cooked black beans</li>
+                            <li>Cooked white or brown rice</li>
+                            <li>Diced red bell pepper</li>
+                            <li>Sliced avocado</li>
+                            <li>Chopped red onion</li>
+                            <li>Fresh cilantro leaves</li>
+                            <li>Lime juice and zest</li>
+                            <li>Chili powder and cumin to taste</li>
+                        </ul>
+                    </div>
+                    <div class="item-detail">
+                        <h3>BBQ Chicken & Sweet Corn Bowl</h3>
+                        <ul id="item7-ingredients">
+                            <li>Grilled BBQ chicken breast, chopped</li>
+                            <li>Cooked sweet corn kernels</li>
+                            <li>Cooked black beans</li>
+                            <li>Diced red onions</li>
+                            <li>Chopped cilantro</li>
+                            <li>Cooked brown rice or quinoa as the base</li>
+                            <li>Drizzle of BBQ sauce</li>
+                            <li>Lime wedge for serving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- guessing game section -->
+        <section id="game">
+            <h2>PLAY & WIN!</h2>
+            <p>Guess correctly for a brief sense of satisfaction.</p>
+            <h3>Enter a Number Between 1 and 10: </h3>
+
+            <button id="guessButton">Take a Guess!</button>
+            <input type="number" id="userNumber" placeholder="enter here">
+
+            <div id="gameResult">
+                <h3>Play Now!</h3>
+            </div>
+
+            <div id="yourGuess">
+                <h3>Enter a Number Between 1 and 10 in the box on the left.</h3>
+            </div>
+
+            <div id="winningNumber">
+                <h3>We will generate a random number. If your number matches, you win!</h3>
+            </div>
+        </section>
+
+        <!-- contact form  -->
+        <section id="contact">
+            <form class="contact-form" id="form">
+                <h2>Contact</h2>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" required>
+                <div></div>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" required>
+                <div></div>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" required>
+                <div></div>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <div></div>
+
+                <fieldset>
+                    <legend>Preferred Method Of Contact:</legend>
+                    <div>
+                        <input type="radio" id="contactPhone" name="contact" value="phone" required checked>
+                        <label for="contactPhone">Phone</label>
+
+                        <input type="radio" id="contactEmail" name="contact" value="email" required>
+                        <label for="contactEmail">Email</label>
+                    </div>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" cols="20" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </body>
+</html>
